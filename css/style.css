@@ -29,4 +29,7 @@ h1{
     flex-direction: column;
 }
 
-
+.container img { 
+    max-width: 200px; 
+    justify-content: flex-end;
+}

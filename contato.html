@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="C:\Users\Positivo\Desktop\VS CODE WORKSPACE\fundamentos-web/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <ul>
@@ -20,19 +20,35 @@
         </li>
     </ul>
     <h1 class="center">Fale comigo:</h1>
-    <form> 
-        <div class="form">
-        <label for="nome">Nome:</label>
-        <input type="text" id = "nome">    
-        <label for="email">Email:</label>
-        <input type="email" id = "email">    
-        <label for="assunto">Assunto:</label>
-        <textarea type="assunto" id = "assunto" cols="60" rows="5"></textarea>
+        <div>
+            <h2>Entre em contato!</h2>
+            <form>
+                <p>Nome:</p>
+                <input type="text" id="nome" onkeyup="validaNome()">
+                <div id="txtNome"></div>
+                <p>Email:</p>
+                <input type="email" id="email" onkeyup="validaEmail()">
+                <div id="txtEmail"></div>
+                <p>Assunto:</p>
+                <textarea id="msg" onkeyup="validaAssunto()"></textarea>
+                <div id="txtAssunto"></div>
+                <br><br>
+                <button name="Enviar"value="Enviar" onclick="mensagem()">Enviar</button>
+            </form>
         </div>
-        <button>Enviar</button>
-        <br>
-        <br>
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d17386.17007326881!2d-46.743598768350616!3d-23.640456734924218!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd9f785d442dd22d0!2sVila%20das%20Belezas!5e0!3m2!1spt-BR!2sbr!4v1626708084431!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </form>     
+
+    <footer class="center">
+        <div class="container">
+            <a href="http://instagram.com/gumunizs" target="_blank">
+                <img class="tm-social" src="C:\Users\Positivo\Desktop\LOGOTIPOS PARA COLOCAR EM SITE (EX INSTA)/instagram.png" alt="logo do insta">
+            </a>
+        </div>
+        </footer>
+  
+
+        <script src="./js/script.js"></script>
+        
 </body>
 </html>
